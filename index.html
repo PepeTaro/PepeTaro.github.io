@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Matz0Car's プログラミングポートフォリオ</title>
+  </head>
+  
+  <body>
+    
+    <div id="root">
+		<ul>
+			<div>
+			<li><a href="./html/2DPhysics.html">2D物理シュミレーションデモ</a></li>
+				<p>	  
+					凸オブジェクトのみに対応した簡易2D物理シュミレーションデモ。<br>
+					衝突判定にGJK(Gilbert–Johnson–Keerthi)アルゴリズムを、Contactデータ生成にEPA(Expanding Polytope Algorithm)を、Collision ResponseにSequential Impulse Solverを使用。<br>
+					グラフィックス描写ライブラリpygameを除いて、スクラッチから実装。<br>
+				</p>
+			</div>
+			<div>
+				<li><a href="./html/DigitalCash.html">デジタルキャッシュデモ</a></li>
+				<p>
+					Webブラウザーを使用して、簡単なデジタルキャッシュのシュミレーションができる。<br>
+					例えば、誰かにお金を送信、銀行からお金を引き出す、ダブルスペンド検出など。<br>
+					理論的には、Ecash(https://en.wikipedia.org/wiki/Ecash)と似たアルゴリズムを使用している。<br>
+					sqlite3,flask,sympyの外部ライブラリを使用。<br>
+				</p>
+			</div>
+			<div>
+				<li><a href="./html/IBC.html">IDベース暗号デモ</a></li>
+				<p>
+					超特異楕円曲線を使用したシンプルなIDベース暗号デモ。<br>
+				</p>
+			</div>
+			<div>
+				<li><a href="./html/ConvNet.html">畳み込みニューラルネットワーク</a></li>
+				<p>
+					TensorFlow,PyTorchのようなもの。<br>
+					行列演算にEigen3を使用していることを除いて、スクラッチから実装。(各レイヤー,Backprop,GEMM,Optimizer(SGD,Adam,AdamW)など) <br>
+					(モデルの保存にJSONライブラリ、描写アプリにSFML、ユニットテストにgtest、訓練データ読み込みに２つの外部ライブラリを使用)  <br>
+					GEMM(GEneral Matrix Multiplication)アルゴリズムを使用している。 <br>
+					すでに学習済みのモデルを使用して、マウスで描写した数字を判定する簡易的なアプリもある。<br>
+					[注意] 訓練データも含むため、合計サイズが約180MB。<br>
+				</p>
+			</div>		
+			<div>
+				<li><a href="./html/QuantumComputer.html">簡易量子コンピューティングデモ</a></li>
+				<p>
+					簡易的な量子コンピュータの計算ができる。<br>
+					量子フーリエ変換、量子テレポーテーション、Superdense Coding、Deutschのアルゴリズム、のデモがある。<br>
+					行列の計算に使用するnumpyを除いて、スクラッチから実装。<br>
+				</p>
+			</div>
+			<div>
+				<li><a href="./html/Cryptocurrency.html">暗号通貨デモ</a></li>
+				<p>
+					手動オフライン暗号通貨デモができる。<br>
+					ブロックやトランザクションを受信したい場合は、ノードの関数をタイピングして呼ぶ必要があるという意味で手動。<br>
+					ネットワーク機能無しという意味でオフライン。<br>
+					視覚的にブロックチェーンを表示できる簡単なGUIアプリもある。<br>
+					pyqt5(GUIアプリに必要)を除いて、楕円曲線暗号から暗号通貨関連のコードまでスクラッチから実装。<br>
+				</p>
+			</div>
+			<div>
+				<li><a href="./html/Renderer.html">ソフトウェアレンダラー(ラスタライザー)</a></li>
+				<p>
+					OpenGLのソフトウェアシュミレーターのようなもの。(ピクセル描写レベルから制作) <br>
+					ソフトウェアレンダラーが故に遅いので、Blinn-Phong reflection modelとGouraud shading modelのみを使用。<br>
+					/examplesディレクトリ内にいくつかのデモがある。<br>
+					Xlib(ピクセル描写のみに使用)、CImg(テクスチャを使用するデモで必要)を除いてスクラッチから実装。<br>
+				</p>
+			</div>
+      </ul>
+	  	<footer>
+			<small>&copy; Copyright 2025, Matz0Car</small>
+		</footer>
+    </div>
+    
+  </body>
+</html>
